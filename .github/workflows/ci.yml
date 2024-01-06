@@ -34,5 +34,5 @@ jobs:
       - name: Run Tests
         env:
           RAILS_ENV: test
-          DATABASE_URL="sqlserver://sa:yourStrongPassword1@@localhost:1433"
+          DATABASE_URL: "sqlserver://sa:yourStrongPassword1@@localhost:1433"
         run: bin/rails db:setup test test:system
