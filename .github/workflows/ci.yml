@@ -19,7 +19,7 @@ jobs:
           - 1433:1433
     steps:
       - name: Install packages
-        run: sudo apt-get update && sudo apt-get install --no-install-recommends -y google-chrome-stable
+        run: sudo apt-get update && sudo apt-get install --no-install-recommends -y google-chrome-stable freetds-dev
 
       - name: Checkout code
         uses: actions/checkout@v4
